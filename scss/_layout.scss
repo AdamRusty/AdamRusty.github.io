@@ -1,0 +1,41 @@
+body {
+    height:500%;
+}
+
+header {
+    @include box(80px, $eighth, $color2);
+    @include PandM(0 $quater, 0 $tenth);
+    position: fixed;   
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    nav {
+        @include box(40px, $half, $color3);
+        @include PandM(10px 20px, 0);
+        left: $quater;  
+        position: absolute;        
+        box-sizing: border-box;
+        border-radius: 5px;
+        ul {
+            @include PandM(0,0);            
+            li {
+                display: inline-block;
+                margin: 0 20px;                
+            }
+            .chosen {
+                margin-right: 60px;
+                font-weight: bold;
+            }
+        }
+    }   
+}
+
+section {
+    @include box ($fifth, $eighth, $color1);
+    @include PandM (0, 0 auto);
+    border-bottom: 2px solid black;
+}
+
+section * {
+    margin: 0;
+}

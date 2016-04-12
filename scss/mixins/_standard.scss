@@ -1,0 +1,12 @@
+/* this is a file */
+
+@mixin box($height, $width, $color) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+
+@mixin PandM($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
