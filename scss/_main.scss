@@ -1,0 +1,16 @@
+section {
+    @include box ($fifth, $eighth, $color1);
+    @include PandM (0, 0 $a);
+    border-bottom: $bord-black;
+    * {
+        margin: 0;
+    }
+    .content{
+        @include box($third, $eighth, $mis-color2);
+        @include PandM(0, 40px $a);
+        p{
+            color: $mis-color1;
+            @include PandM(20px, 0);
+        }        
+    }    
+}

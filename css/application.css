@@ -1,58 +1,69 @@
-/*
-Error: File to import not found or unreadable: main.
-       Load path: F:/digi market/Units/optional/web 206+202/Website/Portfolio-Project/scss
-        on line 9 of scss/application.scss
+/* Grid stuff */
+/* this is a file */
+body {
+  height: 500%; }
 
-4: @import "mixins/standard";
-5: 
-6: @import "reset";
-7: 
-8: @import "header";
-9: @import "main";
-10: @import "footer";
+header {
+  width: 80%;
+  height: 80px;
+  background-color: #2f24cc;
+  padding: 0 25%;
+  margin: 0 10%;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 30px;
+  z-index: 200000000; }
+  header nav {
+    width: 50%;
+    height: 40px;
+    background-color: #b25720;
+    padding: 10px 20px;
+    margin: 0;
+    left: 25%;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 5px; }
+    header nav a {
+      display: inline-block;
+      margin: 0 20px;
+      text-decoration: none;
+      color: #ff8c47; }
+    header nav .chosen,
+    header nav a:focus {
+      margin-right: 60px;
+      font-weight: bold; }
 
-Backtrace:
-scss/application.scss:9
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: main.\A        Load path: F:/digi market/Units/optional/web 206+202/Website/Portfolio-Project/scss\A         on line 9 of scss/application.scss\A \A 4: @import \"mixins/standard\";\A 5: \A 6: @import \"reset\";\A 7: \A 8: @import \"header\";\A 9: @import \"main\";\A 10: @import \"footer\";"; }
+.header-landing {
+  width: 100%;
+  height: 100px;
+  background-color: transparent; }
+
+section {
+  width: 80%;
+  height: 20%;
+  background-color: #ff8c47;
+  padding: 0;
+  margin: 0 auto;
+  border-bottom: 2px solid black; }
+  section * {
+    margin: 0; }
+  section .content {
+    width: 80%;
+    height: 33%;
+    background-color: #3229b2;
+    padding: 0;
+    margin: 40px auto; }
+    section .content p {
+      color: #79ff61;
+      padding: 20px;
+      margin: 0; }
+
+footer {
+  width: 80%;
+  height: 300px;
+  background-color: #b25720;
+  padding: 0;
+  margin: 40px auto 0; }
+
+/*# sourceMappingURL=application.css.map */

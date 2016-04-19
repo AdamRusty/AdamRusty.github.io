@@ -23,7 +23,8 @@ header {
             text-decoration: none;
             color: $color1;            
         }
-        .chosen {
+        .chosen, 
+        a:focus {
             margin-right: 60px;
             font-weight: bold;
         }        
@@ -33,22 +34,3 @@ header {
 .header-landing {
     @include box(100px, $full, transparent);
 }
-
-section {
-    @include box ($fifth, $eighth, $color1);
-    @include PandM (0, 0 $a);
-    border-bottom: $bord-black;
-    * {
-        margin: 0;
-    }
-    .content{
-        @include box($third, $eighth, $mis-color2);
-        @include PandM(0, 40px $a);
-    }    
-}
-
-footer {
-    @include box(300px, $eighth, $color3);
-    @include PandM(0, 40px $a 0);
-}
-
