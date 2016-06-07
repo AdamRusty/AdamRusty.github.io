@@ -1,16 +1,50 @@
 section {
-    @include box ($fifth, $eighth, $color1);
-    @include PandM (0, 0 $a);
+    @include box (auto, $eighth, $color1);
+    @include PandM (0 32px, 32px $a);
     border-bottom: $bord-black;
+    box-sizing: border-box;
     * {
         margin: 0;
     }
+    h2 {
+        position: relative;
+        left:$tenth;
+        width:$tenth;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
     .content{
-        @include box($third, $eighth, $mis-color2);
-        @include PandM(0, 40px $a);
-        p{
+        @include box($a, $eighth, $mis-color2);
+        @include PandM(0, 40px $a);        
+        p {
             color: $mis-color1;
             @include PandM(20px, 0);
-        }        
+        }       
+    }
+.thumbnail-container {
+    @include box(120px, $a, $mis-color2);        
+    @include PandM(10px, 40px $a);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: $eighth;
+    img {
+        @include box($full, $a, none);
+        @include PandM(0 20px, $a);
+    }
+    .thumbnail-wrapper{
+        @include box($full, $a, none);
+        display: inline-flex;
+        .thumbnail {
+            position: relative;
+        }  
+    }
+     
+}        
+    .main-preview {
+        @include box($a, $half, none);
+        @include PandM(0 32px, 40px $a);
+        left: $quater;
+        position: relative;
+        box-sizing: border-box;        
     }    
 }

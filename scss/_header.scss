@@ -1,5 +1,5 @@
 body {
-    height: 500%;
+    height: auto;
 }
 
 header {
@@ -23,8 +23,7 @@ header {
             text-decoration: none;
             color: $color1;            
         }
-        .chosen, 
-        a:focus {
+        .current {        
             margin-right: 60px;
             font-weight: bold;
         }        

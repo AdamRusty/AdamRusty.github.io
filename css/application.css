@@ -1,7 +1,7 @@
 /* Grid stuff */
 /* this is a file */
 body {
-  height: 500%; }
+  height: auto; }
 
 header {
   width: 80%;
@@ -28,9 +28,8 @@ header {
       display: inline-block;
       margin: 0 20px;
       text-decoration: none;
-      color: #ff8c47; }
-    header nav .chosen,
-    header nav a:focus {
+      color: #ccc; }
+    header nav .current {
       margin-right: 60px;
       font-weight: bold; }
 
@@ -41,16 +40,23 @@ header {
 
 section {
   width: 80%;
-  height: 20%;
-  background-color: #ff8c47;
-  padding: 0;
-  margin: 0 auto;
-  border-bottom: 2px solid black; }
+  height: auto;
+  background-color: #ccc;
+  padding: 0 32px;
+  margin: 32px auto;
+  border-bottom: 2px solid black;
+  box-sizing: border-box; }
   section * {
     margin: 0; }
+  section h2 {
+    position: relative;
+    left: 10%;
+    width: 10%;
+    margin-top: 32px;
+    margin-left: 32px; }
   section .content {
     width: 80%;
-    height: 33%;
+    height: auto;
     background-color: #3229b2;
     padding: 0;
     margin: 40px auto; }
@@ -58,10 +64,41 @@ section {
       color: #79ff61;
       padding: 20px;
       margin: 0; }
+  section .thumbnail-container {
+    width: auto;
+    height: 120px;
+    background-color: #3229b2;
+    padding: 10px;
+    margin: 40px auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 80%; }
+    section .thumbnail-container img {
+      width: auto;
+      height: 100%;
+      background-color: none;
+      padding: 0 20px;
+      margin: auto; }
+    section .thumbnail-container .thumbnail-wrapper {
+      width: auto;
+      height: 100%;
+      background-color: none;
+      display: inline-flex; }
+      section .thumbnail-container .thumbnail-wrapper .thumbnail {
+        position: relative; }
+  section .main-preview {
+    width: 50%;
+    height: auto;
+    background-color: none;
+    padding: 0 32px;
+    margin: 40px auto;
+    left: 25%;
+    position: relative;
+    box-sizing: border-box; }
 
 footer {
   width: 80%;
-  height: 300px;
+  height: 120px;
   background-color: #b25720;
   padding: 0;
   margin: 40px auto 0; }
