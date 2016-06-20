@@ -1,6 +1,6 @@
 var header = document.getElementById("title");
 
-if(sessionStorage.getItem("name") == null || '') {
+if(sessionStorage.getItem("name") == "null" || '') {
     var person = prompt("Hello, What is your name?", "Insert your name here.");
     sessionStorage.setItem('name', person);
 } 
