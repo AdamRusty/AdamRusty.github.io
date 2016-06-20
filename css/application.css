@@ -108,8 +108,24 @@ section {
 footer {
   width: 80%;
   height: 120px;
-  background-color: #b25720;
+  background-color: #fff;
   padding: 0;
-  margin: 40px auto 0; }
+  margin: 40px auto 0;
+  border-top: 3px outset #c0c0c0; }
+  footer .socail-icons {
+    width: auto;
+    height: auto;
+    background-color: none;
+    padding: 14px 20px 24px;
+    margin: 0;
+    margin-left: 65%; }
+  footer img {
+    width: auto;
+    height: 48px;
+    background-color: none;
+    padding: 5px; }
+  footer a {
+    cursor: pointer;
+    text-decoration: none; }
 
 /*# sourceMappingURL=application.css.map */

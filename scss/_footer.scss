@@ -1,4 +1,18 @@
 footer {
-    @include box(120px, $eighth, $color3);
+    @include box(120px, $eighth, #fff);
     @include PandM(0, 40px $a 0);
+    border-top: 3px outset #c0c0c0;
+    .socail-icons {
+        @include box($a, $a, none);
+        @include PandM(14px 20px 24px, 0);
+        margin-left: 65%;
+    }    
+    img {
+        @include box(48px, $a, none);
+        padding: 5px
+    }
+    a{
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
