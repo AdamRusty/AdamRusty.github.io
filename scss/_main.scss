@@ -3,6 +3,7 @@ section {
     @include PandM (0 32px, 32px $a);
     border-bottom: $bord-black;
     box-sizing: border-box;
+    box-shadow: 0px 10px 20px 10px #888;
     * {
         margin: 0;
     }
@@ -19,7 +20,14 @@ section {
         p {
             color: $mis-color1;
             @include PandM(20px, 0);
-        }       
+        }
+        img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            margin: 12px 40% 6px;
+            
+        }
     }
     .thumbnail-container {
         @include box(120px, $a, $mis-color2);        

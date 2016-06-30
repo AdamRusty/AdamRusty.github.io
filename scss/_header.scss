@@ -2,10 +2,15 @@ body {
     @include PandM(0, $a);
     height: auto;
     max-width: 1180px;
+    background-image: url(../images/background-webpage.png);
+    background-repeat: repeat-y;
+    background-size: 90% auto;
+    background-position: top;
+    background-attachment: fixed;
 }
 
     header {
-        @include box(80px, $full, $color2);
+        @include box(80px, $full, $color1);
         @include PandM(0, 0 $a);
         position: fixed;  
         top: 0px;
@@ -15,8 +20,9 @@ body {
         box-sizing: border-box;
         border-radius: 30px;
         z-index: 200000000;
+        border: $mis-color2 3px solid;
         h1 {            
-            margin:21.5px $a;
+            margin:18.5px $a;
             text-align: center;
         }
         nav {
@@ -31,6 +37,9 @@ body {
                 text-decoration: none;
                 color: $color1;  
                 width: $a;
+                &:hover {
+                    color: $color2;
+                }
             }
             .current {        
                 margin-right: 60px;
