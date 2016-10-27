@@ -8,3 +8,5 @@ for the first page.
 for the future will come the implementation of 
 other pages to the site as well as a smooth scroll
 navigation.
+
+Site: http://adamrusty.github.io/
